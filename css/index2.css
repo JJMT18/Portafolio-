@@ -1,0 +1,159 @@
+body {
+    padding: 0; /* Eliminar relleno predeterminado del cuerpo */
+    background-color: black;
+    
+}
+#inicio {
+    text-align: center;
+}
+.container {
+    max-width: 1200px; /* Establecer la anchura máxima del contenido principal */
+    margin: 0 auto; /* Centrar el contenido en la pantalla */
+}
+.container-inicio {
+    max-width: 1200px; /* Puedes ajustar este valor según tus preferencias */
+    margin: 0 auto; /* Para centrar el contenido */
+    text-align: center;
+    background: linear-gradient(to right, #F23C13, #bc2218); /* Cambia los colores según tus preferencias */
+    padding: 50px; /* Ajusta el espaciado interior según sea necesario */
+}
+
+/* Ajusta el color del texto en la sección de inicio */
+.container-inicio h1,
+.container-inicio p {
+    color: #fff; /* Color del texto en la sección de inicio */
+}
+.container-proyectos{
+    background-color: #F23C13;
+}
+/* Agregar márgenes a los lados para un aspecto más expandido */
+@media (min-width: 768px) {
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+/* Estilos para las cards */
+section {
+    margin-bottom: 40px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Efecto de elevación */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Efecto de iluminación */
+.card:hover {
+    box-shadow: 0 4px 8px #F2F2F0(0, 0, 0, 0.1);
+
+}  /* Estilos adicionales para la animación del texto */
+.typewriter {
+    color: #F2F2F0;
+    overflow: hidden; /* Para crear el efecto de escritura */
+    border-right: .15em solid #bc2218; /* Cursor intermitente */
+    margin: 0 auto; /* Centrar el texto */
+    letter-spacing: .15em; /* Espaciado entre letras */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+section#sobre-mi .typewriter {
+    font-size: 1.5em;
+}
+.navbar{
+    color: #F2F2F0;
+}
+h2{
+    color: #F2F2F0;
+}
+/* Animación de escritura */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor intermitente */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #bc2218;
+    }
+}
+/* Estilos adicionales para la animación de entrada de las cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar la animación de entrada a las cards */
+.container .card {
+    animation: fadeInUp 0.5s ease-out;
+    box-shadow: 0 8px 16px #F23C13; /* Sombra de color naranja al inicio de la animación */
+    border: 2px solid #F23C13; /* Borde de 2px de color naranja */
+    border-radius: 10px; /* Bordes redondeados para un aspecto más suave */
+}
+
+/* Efecto de elevación al pasar el ratón */
+.container .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px #F23C13; /* Sombra de color naranja más nítida al pasar el ratón */
+    border: 5px solid #F23C13; /* Borde de 3px de color naranja al pasar el ratón */
+}
+.py-5{
+    color: #F2F2F0;
+}
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    width: 100%;
+}
+
+.tarjeta {
+    position: relative;
+    max-width: 200px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 8px 16px #F2F2F0;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Agregamos una clase para las tarjetas de contacto */
+.tarjeta-contacto {
+    background-color: black; /* Color de fondo opcional */
+}
+
+/* Agregamos una animación para las tarjetas de contacto */
+.tarjeta-contacto:hover {
+    transform: scale(1.1);
+}
